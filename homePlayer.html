@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="resources/css/globalStyles.css" />
+        <title>Proyecto Appred</title>
+    </head>
+    <body>
+        <header>
+            <p class="logo">Logo</p>
+        </header>
+        <nav>
+            <ul>
+                <li><img src="resources/Icons/home.png" alt="" /><a href="#">Inicio</a></li>
+                <li><img src="resources/Icons/group.png" alt="" /><a href="teams.html">Mis equipos</a></li>
+                <li><img src="resources/Icons/gamepad.png" alt="" /><a href="games.html">Mis juegos</a></li>
+                <li><img src="resources/Icons/logout.png" alt="" /><a href="">Salir</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="upperSection">
+                <div class="searchbarContainer">
+                    <div class="searchbar">
+                        <img src="./resources/Icons/search.png" alt="" />
+                        <form action="search" method="get">
+                            <input type="text" placeholder="Busca equipos o juegos" />
+                        </form>
+                    </div>
+                </div>
+                <div class="greetingSection">
+                    <h1>¡Bienvenido, usuario!</h1>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="teamsSection">
+                    <h2>Tus equipos</h2>
+                    <div class="cardsContainer">
+                        <div class="teamCard card">
+                            <h3>Team Name</h3>
+                            <p>Event programmed</p>
+                            <form action="/deleteTeamPlayer" method="post">
+                                <input type="hidden" name="id" value="1">
+                                <button class="delB" type="submit">Eliminar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamesSection">
+                    <h2>Tus juegos</h2>
+                    <div class="cardsContainer">
+                        <div class="gameCard card">
+                            <h3>Game Name</h3>
+                            <p>Description programmed</p>
+                            <form action="/deleteGamePlayer" method="post">
+                                <input type="hidden" name="id" value="1">
+                                <button class="delB" type="submit">Eliminar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

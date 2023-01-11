@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="resources/css/globalStyles.css" />
+        <title>Proyecto Appred</title>
+    </head>
+    <body>
+        <header>
+            <p class="logo">Logo</p>
+        </header>
+        <nav>
+            <ul>
+                <li><img src="resources/Icons/home.png" alt="" /><a href="homeTeam.html">Inicio</a></li>
+                <li><img src="resources/Icons/group.png" alt="" /><a href="#">Mis jugadores</a></li>
+                <li><img src="resources/Icons/gamepad.png" alt="" /><a href="events.html">Mis eventos</a></li>
+                <li><img src="resources/Icons/logout.png" alt="" /><a href="">Salir</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="upperSection">
+                <div class="searchbarContainer">
+                    <div class="searchbar">
+                        <img src="./resources/Icons/search.png" alt="" />
+                        <form action="search" method="get">
+                            <input type="text" placeholder="Busca equipos o juegos" />
+                        </form>
+                    </div>
+                </div>
+                <div class="greetingSection">
+                    <h1>¡Bienvenido, equipo!</h1>
+                </div>
+            </div>
+            <div class="dashboardPage">
+                <div class="teamsSectionP">
+                    <h2>Tus jugadores</h2>
+                    <button class="addButton" id="addButton">Agregar nuevo</button>
+                    <div class="cardsContainerPage">
+                        <!--<div class="teamCard card">
+                            <h3>Player Name</h3>
+                            <p>Games</p>
+                            <form action="/deletePlayersTeam" method="post">
+                                <input type="hidden" name="id" value="1" />
+                                <button class="delB" type="submit">Eliminar</button>
+                            </form>
+                        </div>-->
+                        <div class="emptyAdvice">
+                            <p>Aún no tienes eventos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <dialog class="addNewMainWindow" id="addNewMainWindow">
+            <div class="addNewWindow">
+                <h3>Agregar nuevo jugador</h3>
+                <button class="closeButton" id="closeAddWindowButton">Cerrar</button>
+                <div class="searchbarContainer searchbarNewWindow">
+                    <div class="searchbar">
+                        <img src="./resources/Icons/search.png" alt="" />
+                        <div>
+                            <input type="text" placeholder="Busca jugadores" id="searchAddPlayer" />
+                        </div>
+                    </div>
+                </div>
+                <div class="resultsContainer" id="resultsContainer">
+                    <div class="resultContainer">
+                        <h4>Player name</h4>
+                        <p>Juegos</p>
+                        <form action="/addPlayerToTeam" method="post">
+                          <input type="hidden" name="idPlayer" value="${player.idPlayer}">
+                          <button>Añadir</button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </dialog>
+        <script src="resources/js/addNewWindow.js"></script>
+        <script src="resources/js/searchPlayerss.js"></script>
+    </body>
+</html>

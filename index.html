@@ -1,0 +1,81 @@
+<html lag="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Teamder</title>
+        <link href="resources/css/login.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <div class="container" id="container">
+            <div class="login-container">
+                <form id="loginForm" action="LoginServlet" method="post">
+                    <h1>Iniciar Sesión</h1>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/arroba.svg" />
+                        </div>
+                        <input type="email" name="login" id="loginField" placeholder="Correo electrónico" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/lock.svg" />
+                        </div>
+                        <input type="password" name="passwordL" id="passwordFieldL" placeholder="Contraseña" />
+                    </div>
+                    <button type="submit">Ingresar</button>
+                    <button type="button" id="buttonSignUp">Crear cuenta</button>
+                </form>
+            </div>
+            <div class="sing-up-container">
+                <form id="signUpForm" action="SignUpServlet" method="post">
+                    <h1>Crear Cuenta</h1>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/user.svg" />
+                        </div>
+                        <input type="text" name="name" id="nameField" placeholder="Nombre(s)" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/user.svg" />
+                        </div>
+                        <input type="text" name="middleName" id="middleNameField" placeholder="Primer apellido" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/user.svg" />
+                        </div>
+                        <input type="text" name="lastName" id="lastNameField" placeholder="Segundo apellido" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/arroba.svg" />
+                        </div>
+                        <input type="text" name="email" id="emailField" placeholder="Correo electrónico" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/lock.svg" />
+                        </div>
+                        <input type="password" name="password" id="passwordField" placeholder="Contraseña" />
+                    </div>
+                    <div class="input-field">
+                        <div class="icons">
+                            <img src="resources/Icons/login/lock.svg" />
+                        </div>
+                        <input type="password" name="confirmPassword" id="confirmPasswordField" placeholder="Confirmar contraseña" />
+                    </div>
+                    <button type="submit">Registrarme</button>
+                    <button type="reset" id="buttonSignIn">Cancelar</button>
+                </form>
+            </div>
+            <div class="separator"></div>
+        </div>
+        <footer></footer>
+        <script src="resources/js/gamesLoader.js"></script>
+        <script type="text/javascript" src="resources/js/login.js"></script>
+    </body>
+</html>
