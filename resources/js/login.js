@@ -2,8 +2,8 @@
 
 const phraseContainer = document.getElementById("phraseContainer");
 const phrases = [
-    'Si son un equipo de e-sports, podrán reclutar jugadores para eventos que ustedes especifiquen..',
-    'Si eres un jugador, podrás unirte a equipos que necesiten jugadores para sus eventos, además de agregar juegos y el nivel que tengas en ellos..'
+    'Bienvenido a la plataforma para poder recibir atención medica registrate o inicia sesión',
+    'Por favor ingresa tus datos para poder acceder a la plataforma',
 ];
 
 let i = 0;
@@ -63,10 +63,10 @@ const optionSelectionPlayer = document.createElement("span");
     optionSelectionPlayer.classList.remove("selected");
     optionSelectionPlayer.innerHTML = `Jugador`
     
-const optionSelectionTeam = document.createElement("span");
-    optionSelectionTeam.classList.add("optionSelection");
-    optionSelectionTeam.classList.remove("selected");
-    optionSelectionTeam.innerHTML = `Equipo`
+// const optionSelectionTeam = document.createElement("span");
+//     optionSelectionTeam.classList.add("optionSelection");
+//     optionSelectionTeam.classList.remove("selected");
+//     optionSelectionTeam.innerHTML = `Equipo`
 
 
 const signUpButtonL = document.createElement("button");
@@ -127,23 +127,23 @@ function showSignUpTeam(element){
         </div>
     </div>
     <div class="fieldContainer">
-        <label for="teamNameField">Nombre del equipo</label>
+        <label for="teamNameField">Nombre</label>
         <div class="inputField">
             <div class="iconContainer">
                 <img src="resources/Icons/login/user.svg" alt="email" class="icon">
             </div>
-            <input type="text" name="teamNameField" placeholder="nombredetuequipo" id="teamNameField">
+            <input type="text" name="teamNameField" placeholder="Nombre" id="teamNameField">
         </div>
     </div>
-    <div class="fieldContainer">
-        <label for="leaderField">Nombre del líder</label>
-        <div class="inputField">
-            <div class="iconContainer">
-                <img src="resources/Icons/login/user.svg" alt="email" class="icon">
-            </div>
-            <input type="text" name="leaderField" placeholder="Nombre del lider" id="leaderField">
-        </div>
-    </div>
+<!--    <div class="fieldContainer">-->
+<!--        <label for="leaderField">Nombre del líder</label>-->
+<!--        <div class="inputField">-->
+<!--            <div class="iconContainer">-->
+<!--                <img src="resources/Icons/login/user.svg" alt="email" class="icon">-->
+<!--            </div>-->
+<!--            <input type="text" name="leaderField" placeholder="Nombre del lider" id="leaderField">-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="fieldContainer">
         <label for="passwordFieldS">Contraseña</label>
         <div class="inputField">
