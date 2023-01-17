@@ -63,10 +63,10 @@ const optionSelectionPlayer = document.createElement("span");
     optionSelectionPlayer.classList.remove("selected");
     optionSelectionPlayer.innerHTML = `Jugador`
     
-// const optionSelectionTeam = document.createElement("span");
-//     optionSelectionTeam.classList.add("optionSelection");
-//     optionSelectionTeam.classList.remove("selected");
-//     optionSelectionTeam.innerHTML = `Equipo`
+const optionSelectionTeam = document.createElement("span");
+    optionSelectionTeam.classList.add("optionSelection");
+    optionSelectionTeam.classList.remove("selected");
+    optionSelectionTeam.innerHTML = `Equipo`
 
 
 const signUpButtonL = document.createElement("button");
@@ -135,15 +135,15 @@ function showSignUpTeam(element){
             <input type="text" name="teamNameField" placeholder="Nombre" id="teamNameField">
         </div>
     </div>
-<!--    <div class="fieldContainer">-->
-<!--        <label for="leaderField">Nombre del líder</label>-->
-<!--        <div class="inputField">-->
-<!--            <div class="iconContainer">-->
-<!--                <img src="resources/Icons/login/user.svg" alt="email" class="icon">-->
-<!--            </div>-->
-<!--            <input type="text" name="leaderField" placeholder="Nombre del lider" id="leaderField">-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="fieldContainer">
+        <label for="leaderField">Nombre del líder</label>
+        <div class="inputField">
+            <div class="iconContainer">
+                <img src="resources/Icons/login/user.svg" alt="email" class="icon">
+            </div>
+            <input type="text" name="leaderField" placeholder="Nombre del lider" id="leaderField">
+        </div>
+    </div>
     <div class="fieldContainer">
         <label for="passwordFieldS">Contraseña</label>
         <div class="inputField">
