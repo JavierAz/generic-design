@@ -2,7 +2,7 @@
 
 const phraseContainer = document.getElementById("phraseContainer");
 const phrases = [
-    'Bienvenido a la plataforma para poder recibir atención medica registrate o inicia sesión',
+    'Bienvenido a la plataforma para poder checar el estado de tu servicio',
     'Por favor ingresa tus datos para poder acceder a la plataforma',
 ];
 
@@ -61,12 +61,12 @@ const selectionButton = document.createElement("input");
 const optionSelectionPlayer = document.createElement("span");
     optionSelectionPlayer.classList.add("optionSelection");
     optionSelectionPlayer.classList.remove("selected");
-    optionSelectionPlayer.innerHTML = `Jugador`
+    optionSelectionPlayer.innerHTML = `Cliente`
     
 const optionSelectionTeam = document.createElement("span");
     optionSelectionTeam.classList.add("optionSelection");
     optionSelectionTeam.classList.remove("selected");
-    optionSelectionTeam.innerHTML = `Equipo`
+    optionSelectionTeam.innerHTML = `Empleado`
 
 
 const signUpButtonL = document.createElement("button");
@@ -136,12 +136,12 @@ function showSignUpTeam(element){
         </div>
     </div>
     <div class="fieldContainer">
-        <label for="leaderField">Nombre del líder</label>
+        <label for="leaderField">Número de empleado</label>
         <div class="inputField">
             <div class="iconContainer">
                 <img src="resources/Icons/login/user.svg" alt="email" class="icon">
             </div>
-            <input type="text" name="leaderField" placeholder="Nombre del lider" id="leaderField">
+            <input type="text" name="leaderField" placeholder="Número de empleado" id="leaderField">
         </div>
     </div>
     <div class="fieldContainer">

@@ -9,14 +9,14 @@
     </head>
     <body>
         <header>
-            <p class="logo">Hospitales Puerta de Hierro</p>
+            <p class="logo">Sucursales Mecanicas</p>
         </header>
         <nav>
             <ul>
-                <li><img src="resources/Icons/home.png" alt="" /><a href="homePlayer.html">Inicio</a></li>
-                <li><img src="resources/Icons/group.png" alt="" /><a href="teams.html">Mis Doctores</a></li>
-                <li><img src="resources/Icons/search.png" alt="" /><a href="games.html">Mis Citas</a></li>
-                <li><img src="resources/Icons/logout.png" alt="" /><a href="">Salir</a></li>
+                <li><img src="resources/Icons/home.png" alt=""/><a href="homePlayer.html">Inicio</a></li>
+                <li><img src="resources/Icons/group.png" alt=""/><a href="teams.html">Mis Servicios</a></li>
+                <li><img src="resources/Icons/search.png" alt=""/><a href="games.html">Calendario</a></li>
+                <li><img src="resources/Icons/logout.png" alt=""/><a href="">Salir</a></li>
             </ul>
         </nav>
         <main>
@@ -35,52 +35,37 @@
             </div>
             <div class="dashboardPage">
                 <div class="gamesSectionP">
-                    <h2>Tus Citas</h2>
+                    <h2>Calendario</h2>
                     <button class="addButton" id="addButton">Agregar nuevo</button>
                     <div class="cardsContainerPage">
-                        <div class="gameCard card">
-                            <h3>Pediatría</h3>
-                            <p>Revisión periodica para un neonato, esta cita es periodica</p>
-                            <form action="/deleteGamePlayer" method="post">
-                                <input type="hidden" name="id" value="1" />
-                                <button class="delB" type="submit">Eliminar</button>
-                            </form>
-                        </div>
-                        <div class="gameCard card">
-                            <h3>Oftalmología</h3>
-                            <p>Valoración para cambiar la graduación de unos lentes</p>
-                            <form action="/deleteGamePlayer" method="post">
-                                <input type="hidden" name="id" value="1" />
-                                <button class="delB" type="submit">Eliminar</button>
-                            </form>
-                        </div>
-
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FMexico_City"
+                                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" align="center"></iframe>
                     </div>
                 </div>
             </div>
         </main>
         <dialog class="addNewMainWindow" id="addNewMainWindow">
             <div class="addNewWindow">
-                <h3>Agregar nuevo juego</h3>
+                <h3>Agregar nuevo servicio</h3>
                 <button class="closeButton" id="closeAddWindowButton">Cerrar</button>
                 <div class="searchbarContainer searchbarNewWindow">
                     <div class="searchbar">
                         <img src="./resources/Icons/search.png" alt="" />
                         <div>
-                            <input type="text" placeholder="Busca juegos" id="searchAddGame"/>
+                            <input type="text" placeholder="Busca servicios" id="searchAddGame"/>
                         </div>
                     </div>
                 </div>
                 <div class="resultsContainer" id="resultsContainer">
                     <div class="resultContainer resultGameContainer">
-                        <h4>$Medico</h4>
+                        <h4>$Servicio</h4>
                         <form action="/addTeamToPlayer" method="post">
                           <input type="hidden" name="idGame" value="${game.idGame}">
-                          <label for="levelChooser">Selecciona la especialidad: </label>
+                          <label for="levelChooser">Selecciona el servicio: </label>
                           <select name="level" id="levelChooser">
-                            <option value="1">Oftalmotalogía</option>
-                            <option value="2">Pediatría</option>
-                            <option value="3">General</option>
+                            <option value="1">Cambio de aceite</option>
+                            <option value="2">Ajuste de frenos</option>
+                            <option value="3">Servicio general</option>
                           </select>
                           <button>Añadir</button>
                         </form>

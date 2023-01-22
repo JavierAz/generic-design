@@ -9,14 +9,14 @@
     </head>
     <body>
         <header>
-            <p class="logo">Hospitales Puerta de Hierro</p>
+            <p class="logo">Sucursales Mecanicas</p>
         </header>
         <nav>
             <ul>
-                <li><img src="resources/Icons/home.png" alt="" /><a href="#">Inicio</a></li>
-                <li><img src="resources/Icons/group.png" alt="" /><a href="teams.html">Mis Doctores</a></li>
-                <li><img src="resources/Icons/search.png" alt="" /><a href="games.html">Mis Citas</a></li>
-                <li><img src="resources/Icons/logout.png" alt="" /><a href="">Salir</a></li>
+                <li><img src="resources/Icons/home.png" alt=""/><a href="homePlayer.html">Inicio</a></li>
+                <li><img src="resources/Icons/group.png" alt=""/><a href="teams.html">Mis Servicios</a></li>
+                <li><img src="resources/Icons/search.png" alt=""/><a href="games.html">Calendario</a></li>
+                <li><img src="resources/Icons/logout.png" alt=""/><a href="">Salir</a></li>
             </ul>
         </nav>
         <main>
@@ -35,30 +35,49 @@
             </div>
             <div class="dashboardPage">
                 <div class="teamsSectionP">
-                    <h2>Tus Medicos</h2>
+                    <h2>Tus Servicios</h2>
                     <button class="addButton" id="addButton">Agregar nuevo</button>
-                    <div class="cardsContainerPage">
-                        <div class="teamCard card">
-                            <h3>Karina Paredes</h3>
-                            <p>Especialidad en oftalmología</p>
-                            <form action="/deleteTeamPlayer" method="post">
-                                <input type="hidden" name="id" value="1">
-                                <button class="delB" type="submit">Eliminar</button>
-                            </form>
-                        </div>
-                    </div>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Num inv</th>
+                                <th>Descripción</th>
+                                <th>Tiempo de llegada</th>
+                                <th>Tiempo de salida</th>
+                                <th>Observaciones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>030-01</th>
+                                <th>sedan</th>
+                                <th>06/01/19</th>
+                                <th>15/01/19</th>
+                                <th>cambio de aceite</th>
+                            </tr>
+                            <tr>
+                                <th>030-02</th>
+                                <th>sedan</th>
+                                <th>06/01/19</th>
+                                <th>15/01/19</th>
+                                <th>Ajuste de frenos</th>
+                            </tr>
+                            </tbody>
+                        </table>
+
                 </div>
             </div>
         </main>
         <dialog class="addNewMainWindow" id="addNewMainWindow">
                 <div class="addNewWindow">
-                    <h3>Agregar nuevo medico</h3>
+                    <h3>Agregar nuevo Servicio</h3>
                 <button class="closeButton" id="closeAddWindowButton">Cerrar</button>
                 <div class="searchbarContainer searchbarNewWindow">
                     <div class="searchbar">
                         <img src="./resources/Icons/search.png" alt="" />
                         <div>
-                            <input type="text" placeholder="Busca medico" id="searchAddTeam"/>
+                            <input type="text" placeholder="Buscar servicio" id="searchAddTeam"/>
                         </div>
                     </div>
                 </div>

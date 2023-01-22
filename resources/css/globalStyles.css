@@ -726,3 +726,8 @@ main{
 .addNewEventWindow .formContainer form button:hover{
     background-color: var(--button-background);
 }
+
+th, td {
+    border: 1px solid white;
+    border-radius: 10px;
+}
